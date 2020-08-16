@@ -10,7 +10,7 @@
 
 * Fix For Invalid File Type Issue .
 
-####I am not responsible for any damage to your router , if you do this then it is at your own risk . 
+#### I am not responsible for any damage to your router , if you do this then it is at your own risk . 
 
 
 ##### I am going to use Tp Link C6 Gigabit Router (EU Version 2.0) .
@@ -121,11 +121,14 @@
 - Once This is done enter the following commands :
 > ping google.com
 
+
 > opkg update
+
 
 > opkg install luci-ssl-nginx
 
 - The Following Command installs WPA3 . 
+
 > opkg install --force-depends --force-maintainer --force-overwrite wpad-openssl
 
 > reboot  
