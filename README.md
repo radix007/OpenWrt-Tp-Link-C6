@@ -30,7 +30,7 @@
   
 ![Alt Text](/images/Image1.png)
 
-- Now once you find your router , Download the corresponding Firmware . I am going to download the snapshot as it has the latest version . Download It And copy it to desktop .   
+- Now once you find your router , Download the corresponding Firmware . I am going to download the stable version and copy it to the desktop .You can download the snapshot if you want.  
 
 
 
@@ -38,7 +38,7 @@
 
 * You Can Find The Diff btw stable build and snapshot [here](https://openwrt.org/releases/snapshot) and choose accordingly.
 
-- So , I have downloaded The File From **"Firmware Openwrt Upgrade URL".**
+- So , I have downloaded The File From **"Firmware Openwrt Upgrade URL Column ".**
 
 * Place This Downloaded File on your desktop in a folder , just name the folder openwrt , its up to you.
   
@@ -98,16 +98,16 @@
 
 * Now After This Click on the Log Viewer Tab . 
 
-- The Most Crucial Step : Power off The Router , And Then when you power it on  , press the reset button simultaneously (for about 5-10 sec) , you will see the log tab getting filled (right now its looking for a particular file in the current directory ) . 
+- **The Most Crucial Step : Power off The Router**, And Then when you power it on  , press the reset button simultaneously (power and reset at the same time , release the power button , but dont release the reset button until you see the output as shown in the pic) (for about 5-10 sec) , you will see the log tab getting filled (right now its looking for a particular file in the current directory ) . 
 * In My Case It Is looking for this file **"ArcherC6v2_tp_recovery.bin"** , rename the openwrt firmware file with this file name and **then power off the router again and then power on again while simultaneously pressing the reset button**  Make Sure that the Current Directory is the one in which the openwrt firmware  is located with the new file name . It Will Copy That File automatically and will install openwrt . Once This is Done Openwrt will be installed on your router . 
 
 ![Alt Text](/images/Image8.png) 
 
 
 
-- If Your Router firmware has broken or you want to downgrade your router then  , just do this and rename the firmware that you want to replace it with . This is how you can downgrade or fix a broken firmware Tp Link Router . 
+- If you have bricked your router  or you want to downgrade your router then  , just do this and rename the firmware that you want to replace it with . This is how you can downgrade or fix a broken firmware Tp Link Router . 
 
-* Now change back the IP Address TCP/IPv4 from 192.168.0.66 to automatically optain Ip Address . 
+* Now change back the IP Address TCP/IPv4 from 192.168.0.66 to "automatically optain Ip Address " . 
 
 
 
@@ -119,30 +119,42 @@
 - After this connect the router to the modem  , plug the ethernet cable into the wan port . 
 
 - Once This is done enter the following commands :
-> ping google.com
+  > ping google.com
 
 
-> opkg update
+  > opkg update
 
 
-> opkg install luci-ssl-nginx
+  > opkg install luci-ssl-nginx
 
-- The Following Command installs WPA3 . 
+- The Following Command is to Download WPA3 .(Optional But Highly Recommended) 
 
-> opkg install --force-depends --force-maintainer --force-overwrite wpad-openssl
 
-> reboot  
+  > opkg install --force-depends --force-maintainer --force-overwrite wpad-openssl
+
+  > reboot  
+
 
 - After All this Is Done . Open your browser and type **openwrt.lan** or **https://192.168.1.1/cgi-bin/luci/** , It will show Connection not secure add an exception and then openwrt login page will come , by defualt no password . 
 
 - After This Just Configure Your Openwrt . 
 
+![Alt Text](/images/Image9.png) 
+
+![Alt Text](/images/Image10.png)
+
+
+![Alt Text](/images/Image11.png)
 
 #### Setting up Openwrt (Using Putty) :
 
  - The Method is the same , same commands as above . I am not going to show how to install putty .
 
 *  Once You Have Putty Up And Running , repeat the same commands as above .
+
+
+**Read More About WPA3 [Here.](https://www.wi-fi.org/discover-wi-fi/security)**
+
 
 
 #### Thank you Guys , Hope This Helps You . Any Recommendations are Welcomed 
