@@ -10,13 +10,13 @@
 
 * [Fix For Invalid File Type Issue](#installing-openwrt-using-tftpd-method-b-)
 - [Revert Back To Stock Firmware if something happens to your router or if your Openwrt installation fails.](#how-to-go-back-to-stock-firmware--)
-<br/>
+
 
  
-## I am not responsible for any damage to your router , if you do this then it is at your own risk . 
-<br>
+#### NOTE : " I am not responsible for any damage to your router , if you do this then it is at your own risk . "
 
-##### I am going to use Tp Link C6 Gigabit Router (EU Version 2.0) .
+
+#### I am going to use Tp Link C6 Gigabit Router (EU Version 2.0) .
 - Note : Will Work For Tp Link A6 as both are the same . 
 - For US Model ,  A network switch is needed to be connected between the router and TFTPD server, to force 100Mbps FullDuplex connection .
 
@@ -27,7 +27,7 @@
 
 
 
-### Downloading  Openwrt  : 
+## Downloading  Openwrt  : 
 
 - First check whether your router is supported , you can check [here](https://openwrt.org/toh/views/toh_fwdownload) . You can find your hardware version by following these [steps](https://www.tp-link.com/us/support/faq/46/) 
   
@@ -47,7 +47,7 @@
   
 
 
-### Installing Openwrt (Method A) : 
+## Installing Openwrt (Method A) : 
 
 - Since The Latest Tp-link-C6 Update , the version 1.3.5(Archer C6(EU)_V2_200630) released on 14th July 2020 , you cannot downgrade nor install openwrt , it shows **Invalid File Type** . If You are facing this issue then refer to Method B . 
 
@@ -69,7 +69,7 @@
 ![Alt Text](/images/Image3.png) 
 
 
-# Installing Openwrt Using Tftpd (Method B) :
+## Installing Openwrt Using Tftpd (Method B) :
 
 - If You are getting Invalid File type then choose this method . 
 
@@ -112,9 +112,9 @@
 
 * Now change back the IP Address TCP/IPv4 from 192.168.0.66 to "automatically optain Ip Address " . 
 
+<br>
 
-
-#### Setting Up Openwrt (Using ssh ) :
+## Setting Up Openwrt (Using ssh) :
 
 - Open a Terminal and then type -  
   > ssh root@192.168.1.1
@@ -149,14 +149,14 @@
 
 ![Alt Text](/images/Image11.png)
 
-#### Setting up Openwrt (Using Putty) :
+## Setting up Openwrt (Using Putty) :
 
  - The Method is the same , same commands as above . I am not going to show how to install putty.
 
 *  Once You Have Putty Up And Running , repeat the same commands as above .
+<br>
 
-
-#### How To Go Back To Stock Firmware  :
+## How To Go Back To Stock Firmware  :
 
 - **Download the oldest Version . Like In My Case [Archer A6(EU)_V2_200110 , 2020-02-17](https://static.tp-link.com/2020/202002/20200217/Archer%20A6(EU)_V2_200110.zip). Sometimes the newer versions don't work for some reason , so always go with the oldest version and then update to the newest version**
 
@@ -192,8 +192,8 @@
 * This is how you can install the stock firmware if any problem arises during Openwrt installation or if something else happens to your router during upgradation of stock firmware and if you are still not able to go back to stock firmware then pull a request .
 
 ![Alt Text](/images/Image8.png) 
-
-#### FAQ  :
+<br>
+## FAQ  :
 
 - 5Ghz Performance depends on a lot of factors . Please always use the stable Openwrt branch . Don't go for the snapshot version . 
   
