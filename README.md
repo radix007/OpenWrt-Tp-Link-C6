@@ -8,14 +8,17 @@
 
 #### This Guide Will Work For All Supported [Tp Link Routers](https://openwrt.org/toh/views/toh_fwdownload?dataflt%5BBrand*%7E%5D=TP-Link)
 
-* Fix For Invalid File Type Issue .
+* [Fix For Invalid File Type Issue](https://github.com/radix007/OpenWrt-Tp-Link-C6#installing-openwrt-using-tftpd-method-b-)
+- Revert Back To Stock Firmware if something happens to your router or if your Openwrt installation fails .  
+<br/>
 
+ 
 #### I am not responsible for any damage to your router , if you do this then it is at your own risk . 
-
+<br>
 
 ##### I am going to use Tp Link C6 Gigabit Router (EU Version 2.0) .
 - Note : Will Work For Tp Link A6 as both are the same . 
-- For US Model ,  A network switch is need to be connected between the router and TFTP server, force 100Mbps FullDuplex connection .
+- For US Model ,  A network switch is needed to be connected between the router and TFTPD server, to force 100Mbps FullDuplex connection .
 
 
 #### Things To Keep In Mind Before Installing Openwrt :
@@ -148,14 +151,62 @@
 
 #### Setting up Openwrt (Using Putty) :
 
- - The Method is the same , same commands as above . I am not going to show how to install putty .
+ - The Method is the same , same commands as above . I am not going to show how to install putty.
 
 *  Once You Have Putty Up And Running , repeat the same commands as above .
 
 
+#### How To Go Back To Stock Firmware  :
+
+- **Download the oldest Version . Like In My Case [Archer A6(EU)_V2_200110 , 2020-02-17](https://static.tp-link.com/2020/202002/20200217/Archer%20A6(EU)_V2_200110.zip). Sometimes the newer versions don't work for some reason , so always go with the oldest version and then update to the newest version**
+
+ 
+
+*  Now  Download Tftpd from [here](https://tftpd32.jounin.net/tftpd32_download.html) , Choose tftpd64 installer . 
+
+- Click on the downloaded file  and install it , just click next and next , everything is pretty straightforward . 
+
+![Alt Text](/images/Image4.png) 
+
+
+
+
+![Alt Text](/images/Image5.png) 
+
+- After This : Right Click Your Network Icon --> Open Network And Internet Settings --> Under Change Your Network Settings Click On **Change Adapter Options** --> Double Click  Ethernet --> Double Click Internet Protocol Version(TCP/IPv4) --> Then Change from Obtain Ip Address Automatically to **Use The Following Address** 
+
+* IP ADDRESS :  Enter 192.168.0.66 , Click On Subnet Mask ,  It will automatically change to **255.255.255.0**  , then click okay . (You have to chnage this back to automatically later)
+
+![Alt Text](/images/Image7.png) 
+
+
+- Now open  Tftpd64 (Desktop) , You can see the current directory change it to the directory where you have downloaded the stock firmware (Unzip the firmware file and copy the bin file to the working directory) , better would be to just copy the firmware file to a folder on the  desktop . 
+
+* Now After This Click on the Log Viewer Tab . 
+
+- **The Most Crucial Step : Power off The Router**, And Then when you power it on  , press the reset button simultaneously (power and reset at the same time , release the power button , but dont release the reset button until you see the output as shown in the pic) (for about 5-10 sec) , you will see the log tab getting filled (right now its looking for a particular file in the current directory ) . 
+* In My Case It Is looking for this file **"ArcherC6v2_tp_recovery.bin"** , rename the stock firmware file with this file name and **then power off the router again and then power on again while simultaneously pressing the reset button**  Make Sure that the Current Directory is the one in which the stock firmware  is located with the new file name . It Will Copy That File automatically and will install TP Link Stock Firmware Again . Once this is done wait for about 2-3 min . 
+
+- **NOTE : For some people file transfer stops when trying to revert back to stock firmware . So for those people  try to use cat 5 or 5e cable (to force 100Mbps Full Duplex Connection) . This does not happen with eveyone but if it does then you can try this**
+
+* This is how you can install the stock firmware if any problem arises during Openwrt installation or if something else happens to your router during upgradation of stock firmware and if you are still not able to go back to stock firmware then pull a request .
+
+![Alt Text](/images/Image8.png) 
+
+#### FAQ  :
+
+- 5Ghz Performance depends on a lot of factors . Please always use the stable Openwrt branch . Don't go for the snapshot version . 
+  
+* In the wireless radio settings in Openwrt choose your country for signal strength accordingly . 
+
+- Some people have complained about issues with 5Ghz Performance , so if the other things don't work for you then you can always go back to stock firmware 
+
+
+<br>
+
 **Read More About WPA3 [Here.](https://www.wi-fi.org/discover-wi-fi/security)**
 
-
+<br>
 
 #### Thank you Guys , Hope This Helps You . Any Recommendations are Welcomed 
 
