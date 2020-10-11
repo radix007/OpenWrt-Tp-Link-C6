@@ -8,12 +8,12 @@
 
 #### This Guide Will Work For All Supported [Tp Link Routers](https://openwrt.org/toh/views/toh_fwdownload?dataflt%5BBrand*%7E%5D=TP-Link)
 
-* [Fix For Invalid File Type Issue](#Installing-Openwrt-Using-Tftpd-(Method-B):)
-- Revert Back To Stock Firmware if something happens to your router or if your Openwrt installation fails .  
+* [Fix For Invalid File Type Issue](#installing-openwrt-using-tftpd-method-b)
+- [Revert Back To Stock Firmware if something happens to your router or if your Openwrt installation fails.](#how-to-go-back-to-stock-firmware--)
 <br/>
 
  
-#### I am not responsible for any damage to your router , if you do this then it is at your own risk . 
+## I am not responsible for any damage to your router , if you do this then it is at your own risk . 
 <br>
 
 ##### I am going to use Tp Link C6 Gigabit Router (EU Version 2.0) .
@@ -69,7 +69,7 @@
 ![Alt Text](/images/Image3.png) 
 
 
-### Installing Openwrt Using Tftpd (Method B):
+# Installing Openwrt Using Tftpd (Method B) :
 
 - If You are getting Invalid File type then choose this method . 
 
