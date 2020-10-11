@@ -8,7 +8,7 @@
 
 #### This Guide Will Work For All Supported [Tp Link Routers](https://openwrt.org/toh/views/toh_fwdownload?dataflt%5BBrand*%7E%5D=TP-Link)
 
-* [Fix For Invalid File Type Issue](###Installing-Openwrt-Using-Tftpd-(Method-B):)
+* [Fix For Invalid File Type Issue](#Installing-Openwrt-Using-Tftpd-(Method-B):)
 - Revert Back To Stock Firmware if something happens to your router or if your Openwrt installation fails .  
 <br/>
 
