@@ -160,7 +160,7 @@
 
 - **Download the oldest Version . Like In My Case [Archer A6(EU)_V2_200110 , 2020-02-17](https://static.tp-link.com/2020/202002/20200217/Archer%20A6(EU)_V2_200110.zip). Sometimes the newer versions don't work for some reason , so always go with the oldest version and then update to the newest version**
 
- 
+**NOTE : If the above file doesn't work then download this [one](https://static.tp-link.com/2018/201808/20180814/Archer%20C6(EU)_V2_180627.zip).This is the oldest version available (1.0.1).**
 
 *  Now  Download Tftpd from [here](https://tftpd32.jounin.net/tftpd32_download.html) , Choose tftpd64 installer . 
 
