@@ -199,7 +199,7 @@
   
 * In the wireless radio settings in Openwrt choose your country for signal strength accordingly . 
 
-- Some people have complained about issues with 5Ghz Performance , so if the other things don't work for you then you can always go back to stock firmware 
+- **Some people have complained about issues with 5Ghz Performance , so if the other things don't work for you then you can always go back to stock firmware**
 
 
 <br>
