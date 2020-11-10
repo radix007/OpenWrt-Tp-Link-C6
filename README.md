@@ -197,7 +197,7 @@
 
 - 5Ghz Performance depends on a lot of factors . Please always use the stable Openwrt branch . Don't go for the snapshot version . 
   
-* In the wireless radio settings in Openwrt choose your country for signal strength accordingly . 
+* In the wireless radio settings in Luci choose your country for signal strength accordingly . 
 
 - **Some people have complained about issues with 5Ghz Performance , so if the other things don't work for you then you can always go back to stock firmware**
 
