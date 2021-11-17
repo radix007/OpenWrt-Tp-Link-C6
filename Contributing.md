@@ -20,5 +20,5 @@ At this point you're waiting on me. I would be extremely happy if you write at l
 
 Some things that will increase the chance that your pull request is accepted:
 
-    - Follow the style guide
-    - Write a good commit message
+  - Follow the style guide
+  - Write a good commit message
