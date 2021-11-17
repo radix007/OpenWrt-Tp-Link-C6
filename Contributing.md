@@ -4,7 +4,7 @@ Is there any missing information which can be added to the guide to make it more
 
 I'd love to accept your patches and contributions to this project. There are just a few small guidelines you need to follow.
 
-## Code reviews ::
+## Guide Review ::
 
 All submissions, including submissions by project members, require review. I use GitHub pull requests for this purpose. Consult [GitHub Help](https://help.github.com/articles/about-pull-requests/) for more information on using pull requests.
 
