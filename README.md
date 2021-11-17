@@ -1,4 +1,4 @@
-# OpenWrt Guide For Tp Link Routers :
+# OpenWrt Guide For Tp Link Routers ::
 
 #### What Is Openwrt ?
 
@@ -23,7 +23,7 @@
 - Do not connect the modem and the router until instructed
 - If you power down the device while it is installing or upgrading, then you will break the firmware
 
-## **Downloading Openwrt :**
+## **Downloading Openwrt ::**
 
 - Check first to see if your router is supported, which you can do [here](https://openwrt.org/toh/views/toh_fwdownload) . You can find your hardware version by following these [steps](https://www.tp-link.com/us/support/faq/46/)
 
@@ -39,7 +39,7 @@
 
 * Place this downloaded file on your desktop in a folder. Just name the folder openwrt. It is up to you
 
-## Installing Openwrt (Method A) :
+## Installing Openwrt (Method A) ::
 
 - You cannot downgrade or install OpenWrt since the latest Tp-link-C6 Update, version 1.3.5 (Archer C6(EU)\_V2_200630), which was released on July 14th, 2020, because it displays an invalid file type.If you are facing this issue, then refer to Method B
 
@@ -59,7 +59,7 @@
 
 ![Alt Text](/images/Image3.png)
 
-## Installing Openwrt Using Tftpd (Method B) :
+## Installing Openwrt Using Tftpd (Method B) ::
 
 - If you are getting an invalid file type, then choose this method
 
@@ -177,7 +177,7 @@
 ![Alt Text](/images/Image8.png)
 <br>
 
-## FAQ :
+## FAQ ::
 
 - 5Ghz Performance depends on a lot of factors . Please always use the stable Openwrt branch . Don't go for the snapshot version.
 
