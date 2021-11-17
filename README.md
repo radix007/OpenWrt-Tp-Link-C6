@@ -191,7 +191,7 @@
 
 # Contributing ::
 
-Please check out the [contributing.md](contributing.md) guide on how you can actively participate in the development of this guide.
+Please check out the [contributing.md](Contributing.md) guide on how you can actively participate in the development of this guide.
 
 # License ![GitHub](https://img.shields.io/badge/license-GPL--3.0%20License%20-blue)
 
